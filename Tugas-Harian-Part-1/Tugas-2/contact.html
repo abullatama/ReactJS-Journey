@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #kontak {
+            padding: 0 5%;
+        }
+
+        #pesan {
+            padding: 0 5%;
+        }
+
+        table td {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kontak">
+        <h1>Hubungi Kami</h1>
+        <ul style="list-style-type: none; padding: 0;">
+            <li><strong>Kantor :</strong> Jl. Sukasari I</li>
+            <li><strong>Nomor Telepon :</strong> 0821-3061-0581</li>
+            <li><strong>Email :</strong> info@sanbercode.com</li>
+        </ul>
+    </div>
+    <div id="pesan">
+        <h1>Kirimkan Pesan</h1>
+        <form action="index.html">
+            <table style="width: 50%;">
+                <tr>
+                    <td><label for="nama"><b>Nama</b></label></td>
+                    <td><input type="text" size="35" name="nama" placeholder="Nama" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email"><b>Email</b></label></td>
+                    <td><input type="text" size="35" name="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="kelamin"><b>Jenis Kelamin</b></label></td>
+                    <td>
+                        <input type="radio" name="kelamin" value="1" required>
+                        <label for="laki-laki">Laki-laki</label><br>
+                        <input type="radio" name="kelamin" value="2" required>
+                        <label for="perempuan">Perempuan</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pesan"><b>Pesan</b></label></td>
+                    <td><textarea name="pesan" cols="50" rows="7" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Kirim</button></td>
+                </tr>
+            </table>
+        </form>
+        <a href="index.html">Kembali Ke Index</a>
+    </div>
+</body>
+
+</html>
