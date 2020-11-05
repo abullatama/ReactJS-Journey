@@ -30,3 +30,20 @@ for (var i = 1; i <= 20; i++) {
     }
 }
 console.log("")
+
+//Soal 3
+console.log("Soal 3")
+console.log("")
+i = 1
+var segitiga = ""
+while (i <= 7) {
+    j = 1
+    while (j <= i) {
+        segitiga += "#"
+        j++
+    }
+    console.log(segitiga)
+    segitiga = ""
+    i++
+}
+console.log("")
