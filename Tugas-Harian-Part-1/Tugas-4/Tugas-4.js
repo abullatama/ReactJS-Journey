@@ -55,3 +55,19 @@ console.log("Soal 4")
 console.log("")
 console.log(arr)
 console.log("")
+
+//Soal 5
+console.log("Soal 5")
+console.log("")
+
+var daftarBuah = ["2. Apel", "5. Jeruk", "3. Anggur", "4. Semangka", "1. Mangga"];
+var sortDaftar = daftarBuah.sort()
+var jumlah = sortDaftar.length
+var i = 0
+while (i <= jumlah - 1) {
+    console.log(sortDaftar[i])
+    i++
+}
+
+console.log("")
+console.log("Selesai")
