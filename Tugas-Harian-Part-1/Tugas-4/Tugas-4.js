@@ -47,3 +47,11 @@ while (i <= 7) {
     i++
 }
 console.log("")
+
+//Soal 4
+var kalimat = "saya sangat senang belajar javascript"
+var arr = kalimat.split(" ")
+console.log("Soal 4")
+console.log("")
+console.log(arr)
+console.log("")
