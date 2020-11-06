@@ -47,3 +47,14 @@ var objectDaftarPeserta =
 }
 console.log(objectDaftarPeserta)
 console.log("")
+
+//Soal 5
+console.log("Soal 5")
+var buah = [
+    { nama: "strawberry", warna: "merah", ada_bijinya: "tidak", harga: 9000 },
+    { nama: "jeruk", warna: "oranye", ada_bijinya: "ada", harga: 8000 },
+    { nama: "semangka", warna: "hijau & merah", ada_bijinya: "ada", harga: 10000 },
+    { nama: "pisang", warna: "kuning", ada_bijinya: "tidak", harga: 5000 }
+]
+console.log(buah[0])
+console.log("")
