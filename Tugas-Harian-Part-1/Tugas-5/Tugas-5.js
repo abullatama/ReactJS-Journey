@@ -34,3 +34,16 @@ var hobby = "Gaming"
 var perkenalan = introduce(name, age, address, hobby)
 console.log(perkenalan)
 console.log("")
+
+//Soal 4
+console.log("Soal 4")
+var arrayDaftarPeserta = ["Asep", "laki-laki", "baca buku", 1992]
+var objectDaftarPeserta =
+{
+    Nama: arrayDaftarPeserta[0],
+    Jenis_Kelamin: arrayDaftarPeserta[1],
+    Hobi: arrayDaftarPeserta[2],
+    Tahun_Lahir: arrayDaftarPeserta[3]
+}
+console.log(objectDaftarPeserta)
+console.log("")
