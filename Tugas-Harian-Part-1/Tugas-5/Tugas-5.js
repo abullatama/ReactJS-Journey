@@ -58,3 +58,18 @@ var buah = [
 ]
 console.log(buah[0])
 console.log("")
+
+//Soal 6
+console.log("Soal 6")
+var dataFilm = []
+
+function pushDataFilm(nama, durasi, genre, tahun) {
+    var objFilm = { nama: nama, durasi: durasi, genre: genre, tahun: tahun }
+    dataFilm.push(objFilm)
+}
+
+pushDataFilm("Avengers", "1 Jam 30 menit", "action", 2012)
+pushDataFilm("Harry Poter", "1 Jam 15 menit", "fiction", 2010)
+pushDataFilm("John Wick", "2 Jam 10 menit", "action", 2015)
+console.log(dataFilm)
+console.log("")
