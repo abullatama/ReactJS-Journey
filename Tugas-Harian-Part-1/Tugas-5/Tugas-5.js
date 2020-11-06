@@ -20,3 +20,17 @@ var hasilKali = kalikan(num1, num2)
 console.log(hasilKali)
 console.log("")
 
+//Soal 3
+console.log("Soal 3")
+function introduce(name, age, address, hobby) {
+    return "Nama saya " + name + ", umur saya " + age + " tahun, alamat saya di " + address + ", dan saya punya hobby yaitu " + hobby + "!"
+}
+
+var name = "John"
+var age = 30
+var address = "Jalan belum jadi"
+var hobby = "Gaming"
+
+var perkenalan = introduce(name, age, address, hobby)
+console.log(perkenalan)
+console.log("")
