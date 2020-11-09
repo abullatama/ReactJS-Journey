@@ -68,3 +68,14 @@ const newObject = {
 const { firstName, lastName, destination, occupation, spell } = newObject
 console.log(firstName, lastName, destination, occupation)
 console.log("")
+
+//Soal 5
+console.log("Soal 5")
+console.log("")
+
+const west = ["Will", "Chris", "Sam", "Holly"]
+const east = ["Gill", "Brian", "Noel", "Maggie"]
+const combined = [...west, ...east]
+//Driver Code
+console.log(combined)
+console.log("")
