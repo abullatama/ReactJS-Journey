@@ -34,3 +34,21 @@ tambahKata("developer")
 
 console.log(kalimat)
 console.log("")
+
+//Soal 3
+console.log("Soal 3")
+console.log("")
+
+const newFunction = literal = (firstName, lastName) => {
+    return {
+        firstName,
+        lastName,
+        fullName() {
+            console.log(firstName + " " + lastName)
+        }
+    }
+}
+
+//Driver Code 
+newFunction("William", "Imoh").fullName()
+console.log("")
