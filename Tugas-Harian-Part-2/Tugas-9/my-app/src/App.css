@@ -3,14 +3,6 @@
   pointer-events: none;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-}
-
 .App-content{
   border: 2px solid #282c34;
   border-radius: 10px 10px;
@@ -18,7 +10,7 @@
   padding: 0px 30px 30px 30px;
   width: 500px;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .App-content
@@ -49,3 +41,23 @@ button{
 h1{
   text-align: center;
 }
+
+.DataTable{
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.DataTable
+thead{
+  background-color: silver;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.DataTable
+tbody{
+  background-color: rgb(255, 125, 102);
+}
+
