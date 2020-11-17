@@ -25,7 +25,7 @@ class TabelBuah extends React.Component {
     render() {
         return (
             <>
-
+                <h1 className="tittle">Tabel Harga Buah</h1>
                 <table className="DataTable">
                     <thead>
                         <tr>

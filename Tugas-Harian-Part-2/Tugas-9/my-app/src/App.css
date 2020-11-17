@@ -42,9 +42,14 @@ h1{
   text-align: center;
 }
 
+.tittle{
+  text-align: center;
+  margin: 10px auto;
+}
+
 .DataTable{
   border: 1px solid black;
-  margin: 0 auto;
+  margin: 30px auto;
   width: 50%;
 }
 
@@ -60,4 +65,5 @@ thead{
 tbody{
   background-color: rgb(255, 125, 102);
 }
+
 
