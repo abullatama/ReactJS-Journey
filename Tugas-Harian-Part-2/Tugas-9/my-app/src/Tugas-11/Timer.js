@@ -6,13 +6,14 @@ class Timer extends Component {
         if (this.props.start !== undefined) {
             this.state = {
                 time: this.props.start,
-                showTime: true
+                showTime: true,
+                clock: new Date().toLocaleTimeString()
             }
         }
     }
 
     componentDidMount() {
-        this.setTime = setInterval(() => this.increase(), 1000)
+        this.setTime = setInterval(() => this.decrease(), 1000)
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -20,7 +21,7 @@ class Timer extends Component {
             this.setState({
                 showTime: false
             })
-            clearInterval(this.setTime); /*Tidak bisa menggunakan componentWillUnmount jika perubahan showTime nya dilakukan di componentDidUpdate*/
+            this.componentWillUnmount()
         }
         console.log(prevState)
         console.log(this.state.showTime)
@@ -30,9 +31,10 @@ class Timer extends Component {
         clearInterval(this.setTime);
     }
 
-    increase() {
+    decrease() {
         this.setState({
-            time: this.state.time - 1
+            time: this.state.time - 1,
+            clock: new Date().toLocaleTimeString()
         });
     }
 
@@ -42,7 +44,7 @@ class Timer extends Component {
                 {this.state.showTime ?
                     <h1 style={{ textAlign: "center" }}>
                         <span style={{ marginRight: "100px" }}>
-                            sekarang jam : <Clock /> AM
+                            sekarang jam : {this.state.clock} AM
                         </span>
                         hitung mundur : {this.state.time}
                     </h1>
@@ -53,45 +55,5 @@ class Timer extends Component {
 
     }
 }
-
-class Clock extends Component {
-    constructor() {
-        super()
-        this.state = {
-            clock: this.clock()
-        }
-    }
-
-    componentDidMount() {
-        this.setClock = setInterval(() => this.clock(), 1000)
-    }
-
-    componentWillUnmount() {
-        clearInterval(this.setClock);
-    }
-
-    clock() {
-        let today = new Date();
-        let h = today.getHours();
-        let m = today.getMinutes();
-        let s = today.getSeconds();
-        this.setState({
-            clock: h + ":" + m + ":" + s
-        })
-        return h + ":" + m + ":" + s
-    }
-
-    render() {
-        return (
-            <>
-                {this.state.clock}
-            </>
-        )
-    }
-}
-
-
-
-
 
 export default Timer
