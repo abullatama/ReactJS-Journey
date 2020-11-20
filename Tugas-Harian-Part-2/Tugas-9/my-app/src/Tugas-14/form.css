@@ -64,3 +64,34 @@ tbody{
     background-color: crimson;
     border-radius: 5px;
 }
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding:20px;
+    background-color: blue;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav li{
+    display: inline;
+    margin-left: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav button{
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
