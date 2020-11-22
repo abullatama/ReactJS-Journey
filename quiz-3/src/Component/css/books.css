@@ -1,0 +1,43 @@
+.books h2{
+    text-align: center;
+}
+
+.DataTable{
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+thead td{
+    font-weight: bold;
+}
+
+.DataTable td{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+#desc{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#search{
+    text-align: center;
+}
+
+#form{
+    margin: 0 auto;
+}
+
+.dataTableForm{
+    margin: 0 100px;
+}
+
+.dataTableForm td{
+    padding: 5px;
+    padding-bottom: 30px;
+}
